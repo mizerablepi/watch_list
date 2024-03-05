@@ -1,0 +1,38 @@
+<div class="">
+  <div
+    class="relative flex w-60 flex-col rounded-xl bg-white text-gray-800 shadow-md shadow-black/55"
+  >
+    <div
+      class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40"
+    >
+      <img
+        src="https://static.tvmaze.com/uploads/images/medium_portrait/501/1253519.jpg"
+        alt="show image"
+        class="object-cover w-full h-full"
+      />
+    </div>
+    <div class="py-3 px-5">
+      <h5 class="mb-2 text-lg font-semibold leading-snug">SHOW NAME</h5>
+      <div class="font-light line-clamp-3 text-xs">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore
+        ipsum voluptate distinctio natus mollitia consectetur ipsam eos
+        accusamus a consequuntur animi, earum minima? Quibusdam modi molestiae
+        consequatur nam iure!
+      </div>
+    </div>
+    <div class="px-4 pb-3 flex justify-between">
+      <a
+        class="select-none rounded-lg bg-red-500 p-2 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        type="button"
+      >
+        View Details
+      </a>
+      <button
+        class="bg-gray-200 hover:bg-gray-300 px-2 rounded-md"
+        (click)="changeIcon()"
+      >
+        <img src="{{ iconSrc }}" alt="fav" width="20" />
+      </button>
+    </div>
+  </div>
+</div>
